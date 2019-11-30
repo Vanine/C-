@@ -24,12 +24,7 @@ class Queue
 
 void Queue::enqueue(int newItem) {
 	if (!isFull()) {
-		int* newArray = new int[capacity];
-		newArray[0] = newItem;
-		for(int i = 0; i < top; i++) {
-			newArray[i+1] = arr[i];
-		}
-		arr = newArray;
+		arr[top] = newItem;
 		top++;
 	}
 	return;
