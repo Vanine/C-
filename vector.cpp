@@ -116,8 +116,7 @@ void Vector::sort() {
 
 
 int main() {
-	Vector myVector;   //[67,8,5,2,9,90,0,34,-23]
+	Vector myVector;   
 	myVector.insert(67);
-	myVector.deleteItem(455);
 	return 0;
 }
